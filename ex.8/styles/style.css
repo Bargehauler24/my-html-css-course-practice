@@ -1,0 +1,44 @@
+#heroButton {
+  background-color: #4262ff;
+  color: #ffffff;
+}
+.link {
+  color: #4262ff;
+  text-decoration: underline;
+}
+h1,
+h2 {
+  color: rgba(5, 0, 56, 1);
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 1px;
+}
+p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.heroText {
+  color: rgba(5, 0, 56, 1);
+}
+.sectionText {
+  color: rgba(5, 0, 56, 0.6);
+}
+header a {
+  color: rgba(5, 0, 56, 1);
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+}
+.heroForm + p {
+  color: rgba(5, 0, 56, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
