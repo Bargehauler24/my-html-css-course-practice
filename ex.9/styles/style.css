@@ -1,0 +1,88 @@
+#heroButton {
+  background-color: #4262ff;
+  color: #ffffff;
+}
+
+.link {
+  color: #4262ff;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: rgb(1, 1, 29);
+}
+
+#heroButton:active {
+  background-color: #071766;
+}
+
+.heroForm input:focus {
+  background-color: aliceblue;
+}
+
+ul li:nth-child(odd) {
+  color: #626573;
+}
+
+ul li:nth-child(even) {
+  color: #cf1205;
+}
+
+nav a::after {
+  color: red;
+  content: "!";
+}
+
+h1,
+h2 {
+  color: rgba(5, 0, 56, 1);
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.heroText {
+  color: rgba(5, 0, 56, 1);
+}
+
+.sectionText {
+  color: rgba(5, 0, 56, 0.6);
+}
+
+header a {
+  color: rgba(5, 0, 56, 1);
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.heroForm + p {
+  color: rgba(5, 0, 56, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.sectionList {
+  list-style: none;
+}
+
+.sectionList li::marker {
+  content: url(../images/check.svg) !important;
+}
