@@ -1,0 +1,138 @@
+body {
+  background-color: #0f0f14;
+  color: rgba(250, 250, 250, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #1e1f29;
+  padding: 48px;
+  border-radius: 10px;
+  margin: 0 auto; /* для лучшего центрирования */
+  max-width: 600px; /* для лучшего центрирования */
+}
+
+section {
+  text-align: center;
+}
+
+form {
+  display: block;
+  margin: 0 auto; /* Центрирование формы по горизонтали */
+  max-width: 500px; /* Фиксирование максимальной ширины формы */
+}
+
+h1 {
+  color: #fafafa;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+
+label {
+  color: #afb2bf;
+  position: absolute;
+  top: 12px;
+  left: 48px;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+input,
+select,
+textarea {
+  background-color: #2e2d3d;
+  color: #fafafa;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 27px 48px 12px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  display: block; /* для центрирования */
+  margin: 0 auto; /* Центрирование внутри .field */
+}
+
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: #4a4863;
+  font-size: 16px;
+}
+
+/* Добавлено автоматическое центрирование по горизонтали */
+.field {
+  position: relative;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.field img {
+  position: absolute;
+  top: 17px;
+  left: 16px;
+}
+
+/* Превращена в блочный элемент с автоматическими отступами */
+button {
+  border-radius: 10px;
+  border: none;
+  color: #fafafa;
+  background-color: #6c38cc;
+  height: 46px;
+  opacity: 1;
+  padding: 12px 24px;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  cursor: pointer; /* Добавлен курсор-указатель */
+  transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
+
+button:hover {
+  background-color: #5b2da6;
+}
+
+/* Стиль для кастомной стрелки в select */
+select {
+  appearance: none;
+  background-image: url("images/arrow-down.png");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+  padding-right: 40px; /* Место для стрелки */
+}
+
+/* Ограничения для textarea */
+textarea {
+  resize: vertical; /* Только вертикальное изменение размера */
+  min-height: 120px;
+  max-height: 240px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  main {
+    padding: 24px;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 100%; /* На мобильных - полная ширина */
+  }
+}
