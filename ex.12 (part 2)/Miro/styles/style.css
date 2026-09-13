@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 660px;
+  max-height: 550px;
+  object-fit: contain;
+}
+#hero {
+  display: flex;
+  gap: 65px;
+}
+#heroButton {
+  background-color: #4262ff;
+  color: #ffffff;
+  transition: all 1s;
+}
+
+#heroButton:hover {
+  background-color: #122db6;
+}
+
+#heroButton:active {
+  background-color: #071766;
+}
+
+.link {
+  color: #4262ff;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: rgb(1, 1, 29);
+}
+
+.heroForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heroForm input {
+  border-radius: 32px;
+  border: 1px solid rgba(155, 153, 175, 1);
+  height: 48px;
+  padding: 5px 10px;
+}
+
+.heroForm button {
+  border-radius: 32px;
+  border: 1px solid rgba(66, 98, 255, 1);
+  height: 48px;
+  padding: 10px 20px;
+}
+.heroForm input:focus {
+  background-color: aliceblue;
+}
+
+h1 {
+  margin: 0 0 17px 0;
+}
+
+h2 {
+  margin: 60px 0 19px 0;
+}
+
+h1,
+h2 {
+  color: rgba(5, 0, 56, 1);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 1px;
+}
+
+section {
+  padding: 0 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 140px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.heroText {
+  color: rgba(5, 0, 56, 1);
+  margin: 0 0 55px 0;
+}
+
+.heroLogos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 440px;
+}
+
+.heroLogos img {
+  height: 33px;
+  max-width: 60px;
+  object-fit: contain;
+}
+
+.sectionText {
+  color: rgba(5, 0, 56, 0.6);
+  margin: 0 0 40px 0;
+}
+
+header {
+  border-bottom: 1px solid rgba(240, 240, 240, 1);
+  margin-bottom: 60px;
+}
+
+header a {
+  color: rgba(5, 0, 56, 1);
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.heroForm + p {
+  color: rgba(5, 0, 56, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 8px 0 52px 0;
+}
+
+nav {
+  padding: 33px 50px;
+
+  margin-bottom: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 34px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  color: white;
+  background: #050038;
+  padding: 47px 40px;
+}
+
+footer > div {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.sectionList {
+  list-style: none;
+}
+
+.sectionList li::marker {
+  content: url(../images/check.svg) !important;
+}
+
+.section {
+  display: flex;
+  gap: 100px;
+}
+
+.section-reverse {
+  flex-direction: row-reverse;
+}
